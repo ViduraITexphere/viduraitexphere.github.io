@@ -10,8 +10,9 @@ import { useState, useEffect } from 'react';
 import { getAllGames } from 'store/actions/Game Actions/game.action';
 import './Carousel.scss';
 import { BsFillGiftFill } from 'react-icons/bs';
+import Slider from 'react-slick';
 
-function Slider() {
+function CarouselSlider() {
     const [games, setGameData] = useState([]);
 
     useEffect(() => {
@@ -38,13 +39,136 @@ function Slider() {
             }
         }
     };
-    const breakPoints = [
-        { width: 350, itemsToShow: 2 },
-        { width: 650, itemsToShow: 2.3 },
-        { width: 768, itemsToShow: 3.3 },
-        { width: 1200, itemsToShow: 5 },
-        { width: 1500, itemsToShow: 5 }
-    ];
+    // const breakPoints = [
+    //     { width: 350, itemsToShow: 1 },
+    //     { width: 650, itemsToShow: 2 },
+    //     { width: 768, itemsToShow: 3 },
+    //     { width: 1200, itemsToShow: 4 },
+    //     { width: 1500, itemsToShow: 5 }
+    // ];
+
+    const settings = {
+        infinite: false,
+        speed: 500,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        centerPadding: '100px',
+        initialSlide: 0,
+        responsive: [
+            {
+                breakpoint: 1700,
+                settings: {
+                    slidesToShow: 4.3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 1500,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 3,
+                    initialSlide: 3
+                }
+            },
+            {
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 3.5,
+                    slidesToScroll: 3,
+                    initialSlide: 3
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    initialSlide: 3
+                }
+            },
+            {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 2.5,
+                    slidesToScroll: 3,
+                    initialSlide: 3
+                }
+            },
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 2.7,
+                    slidesToScroll: 3,
+                    initialSlide: 3
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2.3,
+                    slidesToScroll: 3,
+                    initialSlide: 3
+                }
+            },
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 3,
+                    initialSlide: 3
+                }
+            },
+            {
+                breakpoint: 620,
+                settings: {
+                    slidesToShow: 1.7,
+                    slidesToScroll: 3,
+                    initialSlide: 3
+                }
+            },
+            {
+                breakpoint: 530,
+                settings: {
+                    slidesToShow: 1.5,
+                    slidesToScroll: 3,
+                    initialSlide: 3
+                }
+            },
+            {
+                breakpoint: 470,
+                settings: {
+                    slidesToShow: 1.3,
+                    slidesToScroll: 3,
+                    initialSlide: 3
+                }
+            },
+            {
+                breakpoint: 420,
+                settings: {
+                    slidesToShow: 1.2,
+                    slidesToScroll: 3,
+                    initialSlide: 3
+                }
+            },
+            {
+                breakpoint: 380,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 3,
+                    initialSlide: 3
+                }
+            }
+            // {
+            //     breakpoint: 480,
+            //     settings: {
+            //         slidesToShow: 1,
+            //         slidesToScroll: 1
+            //     }
+            // }
+        ]
+    };
 
     return (
         <div className="slider">
@@ -64,18 +188,21 @@ function Slider() {
                     Reward Games
                 </Typography>
             </Grid>
-            <Carousel itemPadding={[10, 10]} breakPoints={breakPoints}>
-                {games.map((game, key) => {
-                    if (game.isRewardGame === 'true')
-                        return <SecondaryCard name={game.name} image={game.imgUrl} rating={getdbRating(game)} key={game._id} />;
-                })}
-            </Carousel>
+            <div style={{ paddingRight: '10px' }}>
+                <Slider {...settings} draggable={true}>
+                    {games.map((game, key) => {
+                        if (game.isRewardGame === 'true')
+                            return <SecondaryCard name={game.name} image={game.imgUrl} rating={getdbRating(game)} key={game._id} />;
+                    })}
+                </Slider>
+            </div>
+            {/* <Carousel breakPoints={breakPoints} showArrows={true} emulateTouch={true} swipeable={false}></Carousel> */}
             <Divider sx={{ mb: '20px' }} />
         </div>
     );
 }
 
-export default Slider;
+export default CarouselSlider;
 //  <Carousel itemPadding={[10, 10]} breakPoints={breakPoints}>
 //      {games.map((game) => {
 //          if (game?.categories === Simulation) return <SecondaryCard name={game.name} image={game.imgUrl} rating={getdbRating(game)} />;

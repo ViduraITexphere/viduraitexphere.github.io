@@ -13,6 +13,8 @@ import { store } from 'store';
 import 'assets/scss/style.scss';
 import config from './config';
 import { ThemeProvider } from 'layout/Customization/themeContext';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 // ==============================|| REACT DOM RENDER  ||============================== //
 

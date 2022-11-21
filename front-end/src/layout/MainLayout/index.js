@@ -27,14 +27,14 @@ const MainLayout = () => {
                     <Divider />
                 </Grid>
                 {/* ================================SideBar============================ */}
-                <Media query="(max-width: 800px)">
+                <Media query="(max-width: 900px)">
                     {(matches) => {
                         return matches ? (
                             <Grid item sm={12} md={12} xs={12}>
                                 <CarouselCategory />
                             </Grid>
                         ) : (
-                            <Grid item sm={2} md={2} lg={1.5} sx={{ position: 'static' }}>
+                            <Grid item md={2} lg={1.5} sx={{ position: 'static' }}>
                                 <Sidebar />
                             </Grid>
                         );
@@ -42,7 +42,7 @@ const MainLayout = () => {
                 </Media>
                 {/* ========================================Body============================== */}
 
-                <Grid item xs={12} sm={12} md={10} lg={10.5} sx={{ padding: '30px', position: 'sticky' }}>
+                <Grid item xs={12} sm={12} md={10} lg={10.5} sx={{ padding: '20px' }}>
                     <Outlet />
                 </Grid>
             </Grid>

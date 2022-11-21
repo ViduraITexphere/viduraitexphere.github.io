@@ -78,10 +78,10 @@ function GameBox({ gameDetails }) {
                             {gameDetails?.name}
                         </Typography>
 
-                        <Typography component={'span'}>
+                        {/* <Typography component={'span'}>
                             {dbRating}
                             <HiStar className="rating" size={'20px'} />
-                        </Typography>
+                        </Typography> */}
                     </CardContent>
                 </Card>
             </Button>

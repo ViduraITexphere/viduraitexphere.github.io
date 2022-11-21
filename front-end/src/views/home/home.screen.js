@@ -12,6 +12,8 @@ import { Box } from '@mui/material';
 import { useEffect } from 'react';
 import GameBoxes from './gameBoxes';
 import GameBoxesReward from './gameBoxesRewarded';
+import Carousel from 'ui-component/carousel/Carousel';
+import CarouselSlider from 'ui-component/carousel/Carousel';
 
 function Home() {
     const location = useLocation();
@@ -50,13 +52,10 @@ function Home() {
         <>
             <Media query="(max-width: 800px)">
                 {(matches) => {
-                    return matches ? (
-                        <>{games === 'all' && <GameBoxesReward dataArray={gamesData} />}</>
-                    ) : (
-                        <> {games === 'all' && <Slider />}</>
-                    );
+                    return matches ? <></> : <></>;
                 }}
             </Media>
+            {games === 'all' && <CarouselSlider />}
             {games === 'all' && <GameBoxes dataArray={gamesData} />}
             {Array.isArray(searchGames) && <GameBoxes dataArray={searchGames} />}
             {Array.isArray(categoryGames) && <GameBoxes dataArray={categoryGames} />}

@@ -25,9 +25,9 @@ const GameBoxes = ({ dataArray }) => {
                 </Typography>
             </Grid>
 
-            <Grid container spacing={gridSpacing}>
+            <Grid container>
                 {dataArray.map((game, index) => (
-                    <Grid key={game?._id} item xs={12} sm={6} md={4} lg={2.4}>
+                    <Grid key={game?._id} item xs={4} sm={3} md={3} lg={2} sx={{ display: 'flex', justifyContent: 'center' }}>
                         <GameBox gameDetails={game} />
                     </Grid>
                 ))}

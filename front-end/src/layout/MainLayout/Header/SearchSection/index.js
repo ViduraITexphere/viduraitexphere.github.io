@@ -33,7 +33,15 @@ function SearchSection() {
         <Box>
             <Paper
                 component="form"
-                sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', borderRadius: '10px', height: 34, bgcolor: '#E4DFFF' }}
+                sx={{
+                    p: '2px 4px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    borderRadius: '10px',
+                    height: 34,
+                    bgcolor: '#E4DFFF',
+                    flexGrow: 2
+                }}
             >
                 <InputBase
                     variant="filled"
