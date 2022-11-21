@@ -1,0 +1,30 @@
+.game-view {
+    background-color: #e4dfff;
+    padding: 10px;
+    border-radius: 10px;
+    padding-bottom: -50px;
+}
+.leader-board {
+    background-color: #E4DFFF;
+    border-radius: 10px;
+    
+}
+.screen {
+    max-width: 1300px;
+}
+.fullscreen-icon {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: #8626ff;
+}
+.carousel-dots {
+    .rec.rec-dot {
+        display: none;
+    }
+}
