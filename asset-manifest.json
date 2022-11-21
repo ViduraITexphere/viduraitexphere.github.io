@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9f46d726.css",
+    "main.js": "/static/js/main.0bd59050.js",
+    "static/css/720.a18dd591.chunk.css": "/static/css/720.a18dd591.chunk.css",
+    "static/js/720.e6b2ca6d.chunk.js": "/static/js/720.e6b2ca6d.chunk.js",
+    "static/css/5.9573b82d.chunk.css": "/static/css/5.9573b82d.chunk.css",
+    "static/js/5.491249d5.chunk.js": "/static/js/5.491249d5.chunk.js",
+    "static/js/734.20c899f3.chunk.js": "/static/js/734.20c899f3.chunk.js",
+    "static/js/925.4b6e0ca6.chunk.js": "/static/js/925.4b6e0ca6.chunk.js",
+    "static/css/885.9a26e138.chunk.css": "/static/css/885.9a26e138.chunk.css",
+    "static/js/885.46a27c81.chunk.js": "/static/js/885.46a27c81.chunk.js",
+    "static/js/189.4ba52952.chunk.js": "/static/js/189.4ba52952.chunk.js",
+    "static/js/565.ddc4f489.chunk.js": "/static/js/565.ddc4f489.chunk.js",
+    "static/js/603.f4764e61.chunk.js": "/static/js/603.f4764e61.chunk.js",
+    "static/js/801.62c9c1c0.chunk.js": "/static/js/801.62c9c1c0.chunk.js",
+    "static/js/573.739487a7.chunk.js": "/static/js/573.739487a7.chunk.js",
+    "static/js/271.27bea3a7.chunk.js": "/static/js/271.27bea3a7.chunk.js",
+    "static/js/971.18557d21.chunk.js": "/static/js/971.18557d21.chunk.js",
+    "static/css/59.5dfc1510.chunk.css": "/static/css/59.5dfc1510.chunk.css",
+    "static/js/59.8a92ffc8.chunk.js": "/static/js/59.8a92ffc8.chunk.js",
+    "static/js/411.fae5f213.chunk.js": "/static/js/411.fae5f213.chunk.js",
+    "static/js/354.be3ddce3.chunk.js": "/static/js/354.be3ddce3.chunk.js",
+    "static/js/660.37ebdeed.chunk.js": "/static/js/660.37ebdeed.chunk.js",
+    "static/js/44.0fcc35be.chunk.js": "/static/js/44.0fcc35be.chunk.js",
+    "static/js/802.a2e704f3.chunk.js": "/static/js/802.a2e704f3.chunk.js",
+    "static/js/722.f40883f4.chunk.js": "/static/js/722.f40883f4.chunk.js",
+    "static/js/821.eceaf84f.chunk.js": "/static/js/821.eceaf84f.chunk.js",
+    "static/media/logo_itex.svg": "/static/media/logo_itex.b38b6d2ad3572aad3e100addade734e1.svg",
+    "static/media/icons8-spyro.svg": "/static/media/icons8-spyro.ba965e3b8f6c519cac0cc36b28087638.svg",
+    "static/media/logo.svg": "/static/media/logo.74a2ce07076e6c8805d87937b27d0b3e.svg",
+    "index.html": "/index.html",
+    "static/media/social-google.svg": "/static/media/social-google.a57081bd95c2519caad91216a8dba3ad.svg"
+  },
+  "entrypoints": [
+    "static/css/main.9f46d726.css",
+    "static/js/main.0bd59050.js"
+  ]
+}

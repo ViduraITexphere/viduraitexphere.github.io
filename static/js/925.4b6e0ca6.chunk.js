@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkberry_material_react_free=self.webpackChunkberry_material_react_free||[]).push([[925],{925:function(e,r,a){a.r(r);var s=a(6417);r.default=()=>(0,s.jsx)("div",{children:(0,s.jsx)("p",{children:" UserDetails "})})}}]);
